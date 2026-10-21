@@ -8,7 +8,8 @@ export default defineConfig(() => {
   // Convert -dev- internal URL to -pre- public shared URL
   const publicSharedUrl = rawAppUrl.replace('-dev-', '-pre-');
 
-  return {
+return {
+  base: '/I-LOVE-YOU-VOREVER/',
     define: {
       'import.meta.env.VITE_APP_URL': JSON.stringify(rawAppUrl),
       'import.meta.env.VITE_SHARED_APP_URL': JSON.stringify(publicSharedUrl),
